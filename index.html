@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Промо-акция</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/quiz.css">
+    <link rel="stylesheet" href="styles/loading.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+
+<header id="header" class="header">
+    <div class="logo">CoffeeStyle</div>
+    <nav>
+        <button class="contact-btn" id="contact-button">Связаться с нами</button>
+    </nav>
+</header>
+
+<main>
+    <section id="screen-1" class="screen active">
+        <h2 class="title" id="title"></h2>
+        <img class="img-product" src="assets/product.jpg" alt="Товар">
+        <p class="description" id="description"></p>
+        <div id="timer" class="timer">02:00</div>
+        <div class="container" id="quiz-container">
+            <div id="question-1">
+                <p>Какой тип кофе вы предпочитаете?</p>
+                <button class="quiz-option" data-answer="espresso">Эспрессо</button>
+                <button class="quiz-option" data-answer="americano">Американо</button>
+                <button class="quiz-option" data-answer="latte">Латте</button>
+            </div>
+
+            <div id="question-2" class="hidden">
+                <p>Какой обжарки зернового кофе вы отдаёте предпочтение?</p>
+                <button class="quiz-option" data-answer="light">Светлая</button>
+                <button class="quiz-option" data-answer="medium">Средняя</button>
+                <button class="quiz-option" data-answer="dark">Тёмная</button>
+            </div>
+
+            <div id="question-3" class="hidden">
+                <p>Какой способ заваривания вам нравится?</p>
+                <button class="quiz-option" data-answer="turk">Турка</button>
+                <button class="quiz-option" data-answer="frenchpress">Френч-пресс</button>
+                <button class="quiz-option" data-answer="espresso-machine">Кофемашина</button>
+            </div>
+
+            <div id="question-4" class="hidden">
+                <p>Добавляете ли вы молоко или сливки?</p>
+                <button class="quiz-option" data-answer="yes">Да</button>
+                <button class="quiz-option" data-answer="no">Нет</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="screen-2" class="screen">
+        <div class="loading-spinner"></div>
+        <p class="loading-text"></p>
+    </section>
+
+    <section id="screen-3" class="screen">
+        <h2 class="title" id="offer-title"></h2>
+        <img class="img-product" src="assets/product.jpg" alt="Товар">
+        <p class="description" id="final-description"></p>
+        <form class="container" id="order-form">
+            <input class="custom-input" type="text" name="name" placeholder="Имя" required>
+            <input class="custom-input" type="text" name="surname" placeholder="Фамилия" required>
+
+            <div class="phone-container">
+                <span class="country-flag" id="country-flag">🇷🇺</span>
+                <select class="country-select" id="country-select">
+                    <option value="+1" data-length="10">+1 (США)</option>
+                    <option value="+7" data-length="10" selected>+7 (Россия)</option>
+                    <option value="+380" data-length="9">+380 (Украина)</option>
+                    <option value="+49" data-length="11">+49 (Германия)</option>
+                    <option value="+33" data-length="9">+33 (Франция)</option>
+                    <option value="+39" data-length="10">+39 (Италия)</option>
+                    <option value="+34" data-length="9">+34 (Испания)</option>
+                </select>
+
+                <input type="tel" class="phone" id="phone" name="phone" placeholder="Телефон" required>
+            </div>
+
+            <input class="custom-input" type="email" name="email" placeholder="Email" required>
+            <button class="form-btn" type="submit">Отправить</button>
+        </form>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2025 Все права защищены</p>
+</footer>
+
+<script type="module" src="scripts/main.js"></script>
+</body>
+</html>

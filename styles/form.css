@@ -1,0 +1,77 @@
+.form-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-input {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-btn {
+    background: #333;
+    height: 40px;
+    align-items: center;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.phone-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    padding: 0 10px;
+    width: 80%;
+    height: 45px;
+    margin: 10px auto;
+}
+
+.country-flag {
+    font-size: 24px;
+}
+
+.country-select {
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.phone {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .country-select {
+        width: 20px;
+    }
+
+    .form-container {
+        width: 90%;
+        padding: 15px;
+    }
+}

@@ -1,0 +1,26 @@
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top: 5px solid #333;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.loading-text {
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.loading-text.show {
+    opacity: 1;
+}

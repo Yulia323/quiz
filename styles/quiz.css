@@ -1,0 +1,51 @@
+.timer {
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+    animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.quiz-option {
+    display: block;
+    width: 100%;
+    background: #ffcc00;
+    color: black;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.quiz-option:hover {
+    background: #ffb300;
+    transform: scale(1.01);
+}
+
+.quiz-option:active {
+    background: #ff9800;
+}
+
+@media (max-width: 768px) {
+    .screen {
+        padding: 0;
+    }
+
+    button {
+        width: 100%;
+    }
+}
